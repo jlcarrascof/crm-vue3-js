@@ -25,6 +25,8 @@ defineProps({
           label="Customer"
           placeholder="Customer description"
           help="Type the customer name to register"
+          validation="required"
+          :validation-messages="{ required: 'Customer name is mandatory' }"
         />
       </FormKit>
     </div>
