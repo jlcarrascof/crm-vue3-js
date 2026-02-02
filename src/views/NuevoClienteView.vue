@@ -19,7 +19,14 @@ defineProps({
     <UiHeading>{{ titulo }}</UiHeading>
 
     <div class="mx-auto mt-10 bg-white shadow">
-      <FormKit type="form"></FormKit>
+      <FormKit type="form">
+        <FormKit
+          type="text"
+          label="Customer"
+          placeholder="Customer description"
+          help="Type the customer name to register"
+        />
+      </FormKit>
     </div>
   </div>
 </template>
