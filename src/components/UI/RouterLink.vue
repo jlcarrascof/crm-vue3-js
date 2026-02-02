@@ -1,12 +1,15 @@
 <script setup>
 import { RouterLink } from 'vue-router'
+
+defineProps({
+  to: {
+    type: String,
+  },
+})
 </script>
 
 <template>
-  <RouterLink
-    :to="{ name: 'agregar-cliente' }"
-    class="block md:inline-block rounded bg-blue-600 py-2 px-3"
-  >
-    Add Customer
+  <RouterLink :to="{ name: to }" class="block md:inline-block rounded bg-blue-600 py-2 px-3">
+    <slot></slot>
   </RouterLink>
 </template>
