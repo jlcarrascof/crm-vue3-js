@@ -34,3 +34,9 @@ defineProps({
     </div>
   </div>
 </template>
+
+<style>
+.formkit-wrapper {
+  max-width: 100%;
+}
+</style>
