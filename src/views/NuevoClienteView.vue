@@ -20,7 +20,7 @@ defineProps({
 
     <div class="mx-auto mt-10 bg-slate-200 shadow">
       <div class="mx-auto md:w-2/3 py-20 px-6">
-        <FormKit type="form">
+        <FormKit type="form" :actions="false">
           <FormKit
             type="text"
             label="Customer"
@@ -53,6 +53,8 @@ defineProps({
           <FormKit type="text" label="Address" placeholder="Customer address" />
 
           <FormKit type="text" label="Country" placeholder="Customer country" />
+
+          <FormKit type="submit" label="Add Customer" />
         </FormKit>
       </div>
     </div>
