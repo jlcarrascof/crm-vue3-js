@@ -18,7 +18,7 @@ defineProps({
 
     <UiHeading>{{ titulo }}</UiHeading>
 
-    <div class="mx-auto mt-10 bg-white shadow">
+    <div class="mx-auto mt-10 bg-gray shadow">
       <FormKit type="form">
         <FormKit
           type="text"
