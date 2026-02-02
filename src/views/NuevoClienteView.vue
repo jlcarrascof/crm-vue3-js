@@ -28,6 +28,17 @@ defineProps({
             validation="required"
             :validation-messages="{ required: 'Customer name is mandatory' }"
           />
+
+          <FormKit
+            type="text"
+            label="Email"
+            placeholder="Customer email"
+            validation="required|email"
+            :validation-messages="{
+              required: 'Customer email is mandatory',
+              email: 'Enter a valid email',
+            }"
+          />
         </FormKit>
       </div>
     </div>
