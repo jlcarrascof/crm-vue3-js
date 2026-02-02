@@ -49,6 +49,10 @@ defineProps({
               matches: 'Telephone format is not valid',
             }"
           />
+
+          <FormKit type="text" label="Address" placeholder="Customer address" />
+
+          <FormKit type="text" label="Country" placeholder="Customer country" />
         </FormKit>
       </div>
     </div>
