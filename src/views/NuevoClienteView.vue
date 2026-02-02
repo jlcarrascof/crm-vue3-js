@@ -1,6 +1,6 @@
 <script setup>
 import RouterLink from '../components/UI/RouterLink.vue'
-import UiHeading from '@/components/UI/UiHeading.vue'
+import UiHeading from '../components/UI/UiHeading.vue'
 </script>
 
 <template>
