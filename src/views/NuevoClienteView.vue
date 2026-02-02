@@ -1,10 +1,10 @@
 <script setup>
-import { RouterLink } from 'vue-router'
+import { RouterLink } from '../components/UI/RouterLink.vue'
 </script>
 
 <template>
   <div>
-    <RouterLink :to="{ name: 'inicio' }"> Return </RouterLink>
+    <RouterLink :to="inicio"> Return </RouterLink>
   </div>
 
   <div>
