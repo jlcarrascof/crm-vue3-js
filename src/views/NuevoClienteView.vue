@@ -1,5 +1,6 @@
 <script setup>
 import RouterLink from '../components/UI/RouterLink.vue'
+import UiHeading from '@/components/UI/UiHeading.vue'
 </script>
 
 <template>
@@ -8,6 +9,6 @@ import RouterLink from '../components/UI/RouterLink.vue'
       <RouterLink to="inicio"> Return </RouterLink>
     </div>
 
-    <h1 class="text-4xl font-extrabold text-slate-500">Add Clients</h1>
+    <UiHeading>Add Clients</UiHeading>
   </div>
 </template>
