@@ -1,5 +1,7 @@
 <script setup></script>
 
 <template>
-  <div></div>
+  <div>
+    <h1>Clients</h1>
+  </div>
 </template>
