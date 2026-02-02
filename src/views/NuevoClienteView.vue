@@ -43,11 +43,10 @@ defineProps({
           <FormKit
             type="text"
             label="Phone Number"
-            placeholder="Phone number"
-            validation="required|email"
+            placeholder="Phone number: XXX-XXX-XXXXXXX"
+            validation="*matches:/^[0-9]{3}-[0-9]{3}-[0-9]{7}$/"
             :validation-messages="{
-              required: 'Customer email is mandatory',
-              email: 'Enter a valid email',
+              matches: 'Telephone format is not valid',
             }"
           />
         </FormKit>
