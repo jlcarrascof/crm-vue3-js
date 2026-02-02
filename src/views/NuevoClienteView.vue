@@ -1,6 +1,12 @@
 <script setup>
 import RouterLink from '../components/UI/RouterLink.vue'
 import UiHeading from '../components/UI/UiHeading.vue'
+
+defineProps({
+  titulo: {
+    type: String,
+  },
+})
 </script>
 
 <template>
@@ -9,6 +15,6 @@ import UiHeading from '../components/UI/UiHeading.vue'
       <RouterLink to="inicio"> Return </RouterLink>
     </div>
 
-    <UiHeading>Add Clients</UiHeading>
+    <UiHeading>{{ titulo }}</UiHeading>
   </div>
 </template>
