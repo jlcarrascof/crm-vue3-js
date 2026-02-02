@@ -8,6 +8,7 @@ const router = createRouter({
       path: '/',
       name: 'inicio',
       component: Inicio,
+      props: { titulo: 'Customers Report' },
     },
     {
       path: '/agregar-cliente',
