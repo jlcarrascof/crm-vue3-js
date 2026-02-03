@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted, ref, computed } from 'vue'
-import axios from 'axios'
+import axios from '../lib/axios'
 import UiHeading from '../components/UI/UiHeading.vue'
 import RouterLink from '../components/UI/RouterLink.vue'
 import ClienteData from '../components/ClienteData.vue'
@@ -9,7 +9,7 @@ const clientes = ref([])
 
 onMounted(() => {
   axios
-    .get('http://localhost:4000/clientes/')
+    .get('/clientes')
     .then(({ data }) => (clientes.value = data))
     .catch((error) => console.log('There is an error', error))
 })
