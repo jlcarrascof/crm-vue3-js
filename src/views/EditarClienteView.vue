@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, reactive } from 'vue'
 import ClienteService from '../services/ClienteService'
 import { useRouter, useRoute } from 'vue-router'
 import { FormKit } from '@formkit/vue'
@@ -11,10 +11,18 @@ const route = useRoute()
 
 const { id } = route.params
 
+const formData = reactive({
+  customer: '',
+  email: '',
+})
+
 onMounted(() => {
   ClienteService.obtenerCliente(id)
-    .then(({ data }) => console.log(data))
-    .error((error) => console.log(error))
+    .then(({ data }) => {
+      formData.customer = data.customer
+      formData.email = data.email
+    })
+    .catch((error) => console.log(error))
 })
 
 defineProps({
@@ -41,6 +49,7 @@ const handleSubmit = (data) => {}
           submit-label="Add New Customer"
           incomplete-message="Impossible to send! Check the form"
           @submit="handleSubmit"
+          :value="formData"
         >
           <FormKit
             type="text"
@@ -49,6 +58,7 @@ const handleSubmit = (data) => {}
             placeholder="Customer description"
             validation="required"
             :validation-messages="{ required: 'Customer name is mandatory' }"
+            v-model="formData.customer"
           />
 
           <FormKit
@@ -61,6 +71,7 @@ const handleSubmit = (data) => {}
               required: 'Customer email is mandatory',
               email: 'Enter a valid email',
             }"
+            v-model="formData.email"
           />
 
           <FormKit
