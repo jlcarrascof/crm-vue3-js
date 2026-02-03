@@ -14,6 +14,9 @@ const { id } = route.params
 const formData = reactive({
   customer: '',
   email: '',
+  phone: '',
+  address: '',
+  country: '',
 })
 
 onMounted(() => {
@@ -83,11 +86,24 @@ const handleSubmit = (data) => {}
             :validation-messages="{
               matches: 'Telephone format is not valid',
             }"
+            v-model="formData.phone"
           />
 
-          <FormKit type="text" label="Address" name="address" placeholder="Customer address" />
+          <FormKit
+            type="text"
+            label="Address"
+            name="address"
+            placeholder="Customer address"
+            v-model="formData.address"
+          />
 
-          <FormKit type="text" label="Country" name="country" placeholder="Customer country" />
+          <FormKit
+            type="text"
+            label="Country"
+            name="country"
+            placeholder="Customer country"
+            v-model="formData.country"
+          />
         </FormKit>
       </div>
     </div>
