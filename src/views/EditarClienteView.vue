@@ -11,7 +11,11 @@ const route = useRoute()
 
 const { id } = route.params
 
-onMounted(() => {})
+onMounted(() => {
+  ClienteService.obtenerCliente(id)
+    .then(({ data }) => console.log(data))
+    .error((error) => console.log(error))
+})
 
 defineProps({
   titulo: {
