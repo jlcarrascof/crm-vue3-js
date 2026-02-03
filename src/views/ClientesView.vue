@@ -29,6 +29,11 @@ const existenClientes = computed(() => {
     <div class="flex justify-end">
       <RouterLink to="agregar-cliente"> Add Customer </RouterLink>
     </div>
+
     <UiHeading>{{ titulo }}</UiHeading>
+
+    <div v-if="existenClientes">
+      <p>We have customers!!</p>
+    </div>
   </div>
 </template>
