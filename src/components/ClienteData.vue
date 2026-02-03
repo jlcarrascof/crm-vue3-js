@@ -1,5 +1,6 @@
 <script setup>
 import { computed } from 'vue'
+import { RouterLink } from 'vue-router'
 
 const props = defineProps({
   cliente: {
@@ -26,6 +27,9 @@ const nombreCliente = computed(() => {
       <p class="text-gray-600"></p>
     </td>
     <td class="whitespace-nowrap px-3 py-4 text-sm">{{ nombreCliente }}</td>
-    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"></td>
+    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+      <RouterLink to="/" class="text-indigo-600 hover:text-indigo-900 mr-5">Edit</RouterLink>
+      <button class="text-red-600 hover:text-red-900">Delete</button>
+    </td>
   </tr>
 </template>

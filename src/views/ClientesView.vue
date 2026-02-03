@@ -46,7 +46,7 @@ const existenClientes = computed(() => {
                   Email
                 </th>
                 <th scope="col" class="p-2 text-left text-sm font-extrabold text-gray-600">
-                  Country
+                  City, Country
                 </th>
                 <th scope="col" class="p-2 text-left text-sm font-extrabold text-gray-600">
                   Actions
