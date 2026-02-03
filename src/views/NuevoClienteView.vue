@@ -1,8 +1,11 @@
 <script setup>
 import axios from 'axios'
+import { useRouter } from 'vue-router'
 import { FormKit } from '@formkit/vue'
 import RouterLink from '../components/UI/RouterLink.vue'
 import UiHeading from '../components/UI/UiHeading.vue'
+
+const router = useRouter()
 
 defineProps({
   titulo: {
@@ -16,6 +19,7 @@ const handleSubmit = (data) => {
     .then((respuesta) => {
       console.log(respuesta)
       // redireccionar
+      router.push({ name: 'inicio' })
     })
     .catch((error) => console.log(error))
 }
