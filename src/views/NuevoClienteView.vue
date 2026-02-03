@@ -28,7 +28,7 @@ const handleSubmit = (data) => {
 <template>
   <div>
     <div class="flex justify-end">
-      <RouterLink to="inicio"> Return </RouterLink>
+      <RouterLink to="listado-clientes"> Return </RouterLink>
     </div>
 
     <UiHeading>{{ titulo }}</UiHeading>
