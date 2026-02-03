@@ -13,7 +13,10 @@ defineProps({
 const handleSubmit = (data) => {
   axios
     .post('http://localhost:4000/clientes/', data)
-    .then((respuesta) => console.log(respuesta))
+    .then((respuesta) => {
+      console.log(respuesta)
+      // redireccionar
+    })
     .catch((error) => console.log(error))
 }
 </script>
