@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, computed } from 'vue'
 import axios from 'axios'
 import UiHeading from '../components/UI/UiHeading.vue'
 import RouterLink from '../components/UI/RouterLink.vue'
@@ -17,6 +17,10 @@ defineProps({
   titulo: {
     type: String,
   },
+})
+
+const existenClientes = computed(() => {
+  return clientes.value.length > 0
 })
 </script>
 
