@@ -11,19 +11,12 @@ const route = useRoute()
 
 const { id } = route.params
 
-const formData = reactive({
-  customer: '',
-  email: '',
-  phone: '',
-  address: '',
-  country: '',
-})
+const formData = reactive({})
 
 onMounted(() => {
   ClienteService.obtenerCliente(id)
     .then(({ data }) => {
-      formData.customer = data.customer
-      formData.email = data.email
+      Object.assign(formData, data)
     })
     .catch((error) => console.log(error))
 })
