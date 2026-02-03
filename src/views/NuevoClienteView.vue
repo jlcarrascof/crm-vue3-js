@@ -1,5 +1,5 @@
 <script setup>
-import axios from '../lib/axios'
+import ClienteService from '../services/ClienteService'
 import { useRouter } from 'vue-router'
 import { FormKit } from '@formkit/vue'
 import RouterLink from '../components/UI/RouterLink.vue'
@@ -14,8 +14,7 @@ defineProps({
 })
 
 const handleSubmit = (data) => {
-  axios
-    .post('/clientes', data)
+  ClienteService.agregarClientes(data)
     .then((respuesta) => {
       console.log(respuesta)
       // redireccionar

@@ -4,4 +4,7 @@ export default {
   obtenerClientes() {
     return api.get('/clientes')
   },
+  agregarClientes(data) {
+    return api.post('/clientes', data)
+  },
 }
