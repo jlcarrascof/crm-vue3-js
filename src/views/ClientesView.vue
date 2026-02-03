@@ -4,7 +4,9 @@ import axios from 'axios'
 import UiHeading from '../components/UI/UiHeading.vue'
 import RouterLink from '../components/UI/RouterLink.vue'
 
-onMounted(() => {})
+onMounted(() => {
+  axios.get('http://localhost:4000/clientes/')
+})
 
 defineProps({
   titulo: {
