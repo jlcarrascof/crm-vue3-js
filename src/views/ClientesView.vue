@@ -1,6 +1,10 @@
 <script setup>
+import { onMounted } from 'vue'
+import axios from 'axios'
 import UiHeading from '../components/UI/UiHeading.vue'
 import RouterLink from '../components/UI/RouterLink.vue'
+
+onMounted(() => {})
 
 defineProps({
   titulo: {
