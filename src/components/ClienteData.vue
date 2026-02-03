@@ -1,8 +1,14 @@
 <script setup>
-defineProps({
+import { computed } from 'vue'
+
+const props = defineProps({
   cliente: {
     type: Object,
   },
+})
+
+const nombreCliente = computed(() => {
+  return
 })
 </script>
 
