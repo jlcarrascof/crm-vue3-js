@@ -1,11 +1,17 @@
 <script setup>
+import { onMounted } from 'vue'
 import ClienteService from '../services/ClienteService'
-import { useRouter } from 'vue-router'
+import { useRouter, useRoute } from 'vue-router'
 import { FormKit } from '@formkit/vue'
 import RouterLink from '../components/UI/RouterLink.vue'
 import UiHeading from '../components/UI/UiHeading.vue'
 
 const router = useRouter()
+const route = useRoute()
+
+const { id } = route.params
+
+onMounted(() => {})
 
 defineProps({
   titulo: {
