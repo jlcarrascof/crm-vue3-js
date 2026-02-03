@@ -48,6 +48,9 @@ const existenClientes = computed(() => {
                   City, Country
                 </th>
                 <th scope="col" class="p-2 text-left text-sm font-extrabold text-gray-600">
+                  Status
+                </th>
+                <th scope="col" class="p-2 text-left text-sm font-extrabold text-gray-600">
                   Actions
                 </th>
               </tr>
