@@ -1,0 +1,12 @@
+{
+  "clientes": [
+    {
+      "nombre": "Javier",
+      "id": 1
+    },
+    {
+      "nombre": "William",
+      "id": 2
+    }
+  ]
+}
