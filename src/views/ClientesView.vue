@@ -1,14 +1,16 @@
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 import axios from 'axios'
 import UiHeading from '../components/UI/UiHeading.vue'
 import RouterLink from '../components/UI/RouterLink.vue'
+
+const clientes = ref([])
 
 onMounted(() => {
   axios
     .get('http://localhost:4000/clientes/')
     .then(({ data }) => {
-      console.log(data)
+      clientes.value = data
     })
     .catch((error) => console.log('There is an error', error))
 })
