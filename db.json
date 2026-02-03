@@ -1,28 +1,31 @@
 {
   "clientes": [
     {
-      "id": "bf05",
+      "id": "258c",
       "customer": "Javier",
       "email": "admin@breakingbad.com",
       "phone": "058-424-2121001",
       "address": "Caracas",
-      "country": "Venezuela"
+      "country": "Venezuela",
+      "status": 1
     },
     {
-      "id": "408d",
+      "id": "32a3",
       "customer": "Pedro",
-      "email": "pedro@gmail.com",
-      "phone": "999-444-5555555",
+      "email": "juan@juan.com",
+      "phone": "057-424-2121001",
       "address": "Bogota",
-      "country": "Colombia"
+      "country": "Colombia",
+      "status": 1
     },
     {
-      "id": "c7de",
+      "id": "22bc",
       "customer": "Carmen",
       "email": "carmenmarina@gmail.com",
       "phone": "058-111-1234567",
       "address": "Cumana",
-      "country": "Venezuela"
+      "country": "Venezuela",
+      "status": 1
     }
   ]
 }
