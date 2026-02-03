@@ -14,6 +14,7 @@ defineProps({
 })
 
 const handleSubmit = (data) => {
+  data.estado = 1
   ClienteService.agregarClientes(data)
     .then((respuesta) => {
       console.log(respuesta)
