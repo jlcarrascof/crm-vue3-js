@@ -31,7 +31,14 @@ const estadoCliente = computed(() => {
       <p class="text-gray-600"></p>
     </td>
     <td class="whitespace-nowrap px-3 py-4 text-sm">{{ direccionCompleta }}</td>
-    <td class="whitespace-nowrap px-3 py-4 text-sm">{{ estadoCliente ? 'Active' : 'Inactive' }}</td>
+    <td class="whitespace-nowrap px-3 py-4 text-sm">
+      <button
+        class="inline-flex rounded-full px-2 text-xs font-semibold leading-5"
+        :class="[estadoCliente ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800']"
+      >
+        {{ estadoCliente ? 'Active' : 'Inactive' }}
+      </button>
+    </td>
     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
       <RouterLink to="/" class="text-indigo-600 hover:text-indigo-900 mr-5">Edit</RouterLink>
       <button class="text-red-600 hover:text-red-900">Delete</button>
