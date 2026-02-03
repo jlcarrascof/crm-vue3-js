@@ -35,5 +35,7 @@ const existenClientes = computed(() => {
     <div v-if="existenClientes">
       <p>We have customers!!</p>
     </div>
+
+    <p v-else class="text-center mt-10">There aren't customers</p>
   </div>
 </template>
