@@ -19,7 +19,7 @@ const handleSubmit = (data) => {
     .then((respuesta) => {
       console.log(respuesta)
       // redireccionar
-      router.push({ name: 'inicio' })
+      router.push({ name: 'listado-clientes' })
     })
     .catch((error) => console.log(error))
 }

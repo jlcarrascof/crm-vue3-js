@@ -7,6 +7,14 @@
       "phone": "058-424-2121001",
       "address": "Caracas",
       "country": "Venezuela"
+    },
+    {
+      "id": "408d",
+      "customer": "Pedro",
+      "email": "pedro@gmail.com",
+      "phone": "999-444-5555555",
+      "address": "Bogota",
+      "country": "Colombia"
     }
   ]
 }
