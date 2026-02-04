@@ -1,13 +1,13 @@
 {
   "clientes": [
     {
-      "id": "258c",
-      "customer": "Javier",
+      "customer": "Javier - Actualizado",
       "email": "admin@breakingbad.com",
       "phone": "058-424-2121001",
       "address": "Caracas",
       "country": "Venezuela",
-      "status": 1
+      "status": 0,
+      "id": "258c"
     },
     {
       "id": "32a3",
