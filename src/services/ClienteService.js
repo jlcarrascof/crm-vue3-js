@@ -17,6 +17,6 @@ export default {
     return api.patch('/clientes/' + id, data)
   },
   eliminarCliente(id) {
-    console.log(id)
+    return api.delete('/clientes/' + id)
   },
 }
