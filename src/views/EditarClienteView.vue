@@ -28,7 +28,7 @@ defineProps({
 })
 
 const handleSubmit = (data) => {
-  ClienteService.actualizarCliente(id)
+  ClienteService.actualizarCliente(id, data)
 }
 </script>
 

@@ -10,7 +10,5 @@ export default {
   obtenerCliente(id) {
     return api.get('/clientes/' + id)
   },
-  actualizarCliente(id) {
-    console.log(id)
-  },
+  actualizarCliente(id, data) {},
 }
