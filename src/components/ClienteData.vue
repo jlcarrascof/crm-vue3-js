@@ -16,7 +16,7 @@ const estadoCliente = computed(() => {
   return props.cliente.status
 })
 
-defineEmits(['actualizar-estado'])
+defineEmits(['actualizar-estado', 'eliminar-cliente'])
 </script>
 
 <template>
@@ -48,7 +48,12 @@ defineEmits(['actualizar-estado'])
         class="text-indigo-600 hover:text-indigo-900 mr-5"
         >Edit</RouterLink
       >
-      <button class="text-red-600 hover:text-red-900">Delete</button>
+      <button
+        class="text-red-600 hover:text-red-900"
+        @click="($event) => $emit('eliminar-cliente', cliente.id)"
+      >
+        Delete
+      </button>
     </td>
   </tr>
 </template>
