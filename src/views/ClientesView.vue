@@ -23,8 +23,8 @@ const existenClientes = computed(() => {
   return clientes.value.length > 0
 })
 
-const actualizarEstado = (id) => {
-  console.log('Actualizando ...', id)
+const actualizarEstado = (data) => {
+  console.log('Actualizando ...', data)
 }
 </script>
 

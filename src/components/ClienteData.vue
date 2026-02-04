@@ -37,7 +37,7 @@ defineEmits(['actualizar-estado'])
       <button
         class="inline-flex rounded-full px-2 text-xs font-semibold leading-5"
         :class="[estadoCliente ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800']"
-        @click="($event) => $emit('actualizar-estado', cliente.id)"
+        @click="($event) => $emit('actualizar-estado', { id: cliente.id, estado: cliente.status })"
       >
         {{ estadoCliente ? 'Active' : 'Inactive' }}
       </button>
