@@ -7,7 +7,7 @@
       "address": "Caracas",
       "country": "Venezuela",
       "id": "258c",
-      "status": 1
+      "status": true
     },
     {
       "id": "32a3",
@@ -16,7 +16,7 @@
       "phone": "057-424-2121001",
       "address": "Bogota",
       "country": "Colombia",
-      "status": 0
+      "status": false
     },
     {
       "id": "22bc",
@@ -25,7 +25,7 @@
       "phone": "058-111-1234567",
       "address": "Cumana",
       "country": "Venezuela",
-      "status": 1
+      "status": true
     }
   ]
 }

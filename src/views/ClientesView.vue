@@ -24,7 +24,12 @@ const existenClientes = computed(() => {
 })
 
 const actualizarEstado = ({ id, status }) => {
-  ClienteService.cambiarEstado(id, !status)
+  ClienteService.cambiarEstado(id, { status: !status })
+    .then(() => {
+      const i = clientes.value.findIndex((cliente) => cliente.id === id)
+      clientes.value[i].status = !status
+    })
+    .catch((error) => console.log(error))
 }
 </script>
 
