@@ -22,6 +22,10 @@ defineProps({
 const existenClientes = computed(() => {
   return clientes.value.length > 0
 })
+
+const actualizarEstado = () => {
+  console.log('Actualizando ...')
+}
 </script>
 
 <template>
@@ -56,7 +60,12 @@ const existenClientes = computed(() => {
               </tr>
             </thead>
             <tbody class="divide-y divide-gray-200 bg-white">
-              <ClienteData v-for="cliente in clientes" :key="cliente.id" :cliente="cliente" />
+              <ClienteData
+                v-for="cliente in clientes"
+                :key="cliente.id"
+                :cliente="cliente"
+                @actualizar-estado="actualizarEstado"
+              />
             </tbody>
           </table>
         </div>
