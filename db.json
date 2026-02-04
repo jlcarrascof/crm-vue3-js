@@ -26,24 +26,6 @@
       "address": "Cumana",
       "country": "Venezuela",
       "status": true
-    },
-    {
-      "id": "9999",
-      "customer": "Pedro",
-      "email": "juan@juan.com",
-      "phone": "057-424-2121001",
-      "address": "Bogota",
-      "country": "Colombia",
-      "status": false
-    },
-    {
-      "id": "8888",
-      "customer": "Carmen",
-      "email": "carmenmarina@gmail.com",
-      "phone": "058-111-1234567",
-      "address": "Cumana",
-      "country": "Venezuela",
-      "status": true
     }
   ]
 }
