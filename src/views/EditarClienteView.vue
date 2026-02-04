@@ -46,7 +46,7 @@ const handleSubmit = (data) => {
       <div class="mx-auto md:w-2/3 py-20 px-6">
         <FormKit
           type="form"
-          submit-label="Add New Customer"
+          submit-label="Edit Customer"
           incomplete-message="Impossible to send! Check the form"
           @submit="handleSubmit"
           :value="formData"
