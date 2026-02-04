@@ -29,6 +29,8 @@ defineProps({
 
 const handleSubmit = (data) => {
   ClienteService.actualizarCliente(id, data)
+    .then(() => router.push({ name: 'listado-clientes' }))
+    .catch((error) => console.log(error))
 }
 </script>
 
