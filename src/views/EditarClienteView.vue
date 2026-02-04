@@ -27,7 +27,9 @@ defineProps({
   },
 })
 
-const handleSubmit = (data) => {}
+const handleSubmit = (data) => {
+  ClienteService.actualizarCliente(id)
+}
 </script>
 
 <template>
