@@ -33,7 +33,7 @@ const actualizarEstado = ({ id, status }) => {
 }
 
 const eliminarCliente = (id) => {
-  console.log(id)
+  ClienteService.eliminarCliente(id)
 }
 </script>
 
